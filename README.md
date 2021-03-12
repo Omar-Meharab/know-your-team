@@ -28,5 +28,7 @@ team logo: strTeamBadge
 facebook: strFacebook
 twitter: strtwitter
 instagram: strInstagram
+id: idTeam
+country: strCountry
 
 team description: strDescriptionEN
