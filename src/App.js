@@ -1,13 +1,30 @@
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 import './App.css';
-import TeamsData from './components/TeamsData/TeamsData';
-import TopBanner from './components/TopBanner/TopBanner';
+import Home from "./components/Home/Home";
+import NoMatch from "./components/NoMatch/NoMatch";
+
 
 function App() {
   return (
-    <div className="App">
-      <TopBanner></TopBanner>
-      <TeamsData></TeamsData>
-    </div>
+    <Router>
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/about">
+          </Route>
+          <Route path="/dashboard">
+          </Route>
+          <Route path="*">
+            <NoMatch />
+          </Route>
+        </Switch>
+    </Router>
   );
 }
 

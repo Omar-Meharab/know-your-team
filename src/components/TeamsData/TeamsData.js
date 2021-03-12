@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import TeamCard from '../TeamCard/TeamCard';
+import './TeamData.css';
 
 const TeamCards = () => {
 
@@ -17,12 +18,10 @@ const TeamCards = () => {
     console.log(teamsData);
 
     return (
-        <div>
-            <p>this is card</p>
+        <div class="row row-cols-1 row-cols-md-3 g-4 center">
             {
                 teamsData.map((team) => <TeamCard key={team.idTeam} team={team}></TeamCard>)
             }
-            
         </div>
     );
 };
