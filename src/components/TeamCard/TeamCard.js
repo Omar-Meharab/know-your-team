@@ -1,13 +1,11 @@
 import React from 'react';
 
 const TeamCard = (props) => {
-    const data = props.teamsData;
-    const [strTeam] = data;
+    const {strTeam} = props.team;
+    // console.log(data);
     return (
         <div>
-            {
-                data.map(data => <h1>{strTeam}</h1>)
-            }
+            <p>this is teamcard {strTeam}</p>
         </div>
     );
 };
