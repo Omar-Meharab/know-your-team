@@ -6,4 +6,4 @@ you will be taken to the page where you will find some detailed info about the t
 in that page, you will find social icon to take you to their social media pages on click.
 
 ## Visit the site
-[Click-Me] (https://know-your-team.netlify.app/)
+[Click-Me](https://know-your-team.netlify.app/)
