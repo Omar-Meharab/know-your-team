@@ -18,7 +18,7 @@ const TeamCards = () => {
     console.log(teamsData);
 
     return (
-        <div class="padding">
+        <div class="alignment">
             <div class="row row-cols-1 row-cols-md-3 g-4 card-div">
                 {
                     teamsData.map((team) => <TeamCard key={team.idTeam} team={team}></TeamCard>)
