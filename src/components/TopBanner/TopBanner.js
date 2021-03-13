@@ -6,7 +6,7 @@ const TopBanner = () => {
     return (
         <div className="container">
             <img className="img-fluid img" src={BannerImage} alt=""/>
-            <h1 className="centered">Know Your Team</h1>
+            <h1 className="text">Know Your Team</h1>
         </div>
     );
 };
